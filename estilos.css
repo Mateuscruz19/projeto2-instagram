@@ -257,6 +257,28 @@ margin-top:3px;
 
 }
 
+.textofeed1{
+    width: 309px;
+    height: 21px;
+    font-size: 14px;
+    margin-left: 5px;
+    white-space: nowrap;
+    margin-top:5px;
+    margin-bottom:5px;
+    margin-left: 15px;
+    }
+
+  .likezinho{
+    cursor:pointer;
+    margin-left: 270px;
+    margin-top: 3px;
+  }
+
+    .comentarios{
+        background-color: white;
+        display: flex;     
+    }
+
 .post-content{
     width: 100%;
 }
