@@ -1,0 +1,583 @@
+*{
+    margin:0;   
+    padding: 0;
+    box-sizing:border-box;
+
+}
+
+*:focus{
+    outline:none;
+}
+
+body{
+    width: 100%;
+    background-color: #fafafa;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+}
+
+.barra_instagram{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    border-bottom: 1px solid #dfdfdf;
+    display:flex;
+    justify-content:center;
+    padding: 5px ;
+    z-index:1;
+}
+
+.pesquisar{
+    width: 70%;
+    max-width: 1000px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.divisoria_icone{
+    
+position: absolute;
+width: 1px;
+height: 22px;
+top: 15px;
+margin-left:42px;
+background-color: #DBDBDB;
+
+}
+
+.logo{
+ margin-right: 30px;
+ margin-bottom: 5px;
+ 
+ 
+}
+
+.barra-pesquisa{
+    position:absolute;
+    left:50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 25px;
+    background: #fafafa;
+    border: 1px solid #dfdfdf;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    text-transform: capitalize;
+}
+
+;.barra-pesquisa::placeholder{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.barra-lateral{
+    height: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+
+.icones-direita{
+    height: 22px;
+    position: relative;
+    
+}
+
+.icones{
+    cursor: pointer;
+    height: 100%;
+    width:25px;
+    margin: 0 10px;
+    display: inline-block;
+
+}
+
+
+/*  CABEÇALHO FEIO(APENAS PARTE DESKTOP) */
+
+
+.principal{
+    width: 100%;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    margin-top:50px;
+}
+
+.wrapper {
+    width: 70%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns:60% 40%;
+    grid-gap: 30px;
+}
+
+.left-col{
+    display:flex;
+    flex-direction: column;
+    width: 104%;
+}
+
+.fixed{
+    position: fixed;
+}
+.conteiner-stories{
+    width: 100%;
+    height: 120px;
+    background: #fff;
+    border: 1px solid #dfdfdf;
+    border-radius: 2px;
+    padding: 10px;
+    padding-right: 0;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.stories{
+    flex: 0 0 auto;
+    width:80px;
+    max-width:80px;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    margin-right:15px;
+
+}
+
+.foto-perfil{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 3px;
+    cursor: pointer;
+    background:linear-gradient(45deg, rgb(255, 230, 0), rgb(255, 0, 128)80%);
+    /* CREDITOS AO CANAL "MODERN WEB" POR ENSINAR A TAG ACIMA PARA COLOCAR A BORDA DO INSTAGRAM USANDO APENAS CSS */
+}
+
+.foto-perfil img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.nome-usuario{
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 12px;
+    color: #262626;
+}
+.feed1{
+    width: 100%;
+    height:auto;
+    background-color: #fff;
+    border: 1px solid #dfdfdf;
+    margin-top: 40px;
+    margin-left: none;
+}
+
+.feed{
+    width: 100%;
+    height:auto;
+    background-color: #fff;
+    border: 1px solid #dfdfdf;
+    margin-top: 40px;
+    margin-left: none;
+}
+
+.info{
+    width: 100%;
+    height: 60px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.info .username{
+    width: auto;
+    font-weight: bold;
+    color:#000;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.info .options{
+    height: 10px;
+    cursor: pointer;
+}
+
+.info .user{
+    display: flex;
+    align-items: center;
+
+}
+
+.info .foto-perfil{
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    background: none;
+}
+
+.info .foto-perfil{
+    border:none;
+}
+
+.post-image{
+    width: 100%;
+    height: 612px;
+    object-fit: cover;
+}
+
+.jamesicon{
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.textofeed{
+width: 309px;
+height: 21px;
+font-size: 14px;
+margin-left: 5px;
+white-space: nowrap;
+margin-top:3px;
+
+}
+
+.post-content{
+    width: 100%;
+}
+
+.negrito{
+    font-weight: bold;
+}
+
+.comment-wrapper{
+    width: 100%;
+    height: 50px;
+    border-radius: 1px solid #dfdfdf;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comment-wrapper .icones{
+    height: 25px;
+    margin-bottom: 2px;
+    
+}
+
+.comment-box{
+    width: 80%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.comment-btn,
+.action-btn{
+    width: 70px;
+    height: 100%;
+    background-color: none;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    font-size:15px;
+    color: rgb(0, 162, 255);
+    opacity: 0.5;
+    
+}
+
+.reaction-wrapper{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    margin-top: -5px;
+    margin-left: 5px;
+    background-color: white;
+    
+    
+}
+
+.save{
+    margin-left:auto
+}
+
+.james{
+    display: flex;
+    margin-left: 17px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.tempo{
+    color: gray;
+    font-size: 11px;
+    margin: auto;
+    margin-left: 17px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.right-col{
+    padding: 20px;
+    margin-left:15%;
+}
+
+.profile-card{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.profile-card .foto-perfil{
+    flex: 0 0 auto;
+    padding: 0;
+    background: none;
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+
+.profile-card:first-child .foto-perfil{
+    width: 70px;
+    height: 70px;
+    margin-left: -9px;
+}
+
+.profile-card .foto-perfil img{
+    border: none;
+}
+
+.profile-card .username{
+    font-weight: 500;
+    font-size: 14px;
+    color: #000;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    cursor: pointer;
+}
+
+.sub-text{
+    color: rgb(0, 0, 0, 0.5);
+    font-size: 12px;
+    font-style: 500;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.action-btn{
+    opacity:1;
+    font-weight: 700;
+    font-size: 12px;
+    background-color: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: 100px;
+    position: static;
+
+}
+
+.suggestion-text{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color:  #8E8E8E;
+    margin: 20px 0;
+}
+
+.suggestion-1{
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    color: #C7C7C7;
+    margin: 20px 0;
+}
+
+.suggestion-2{
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    color:#C7C7C7;
+    margin: 20px 0;
+}
+
+.seta{
+    position: absolute;
+    font-size: 32px;
+    top:43px;
+    right: px;
+    color: #ffffff;
+    filter: drop-shadow(0 0 1rem lightgray);
+}
+
+.seta.right:before {
+	left: 0;
+	transform: rotate(45deg);
+}
+
+
+.barrafinal{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    border-top: 1px solid #dfdfdf;
+    display:flex;
+    justify-content:center;
+    padding: 5px ;
+    z-index:1;
+}
+
+
+.iconesfinais{
+    background-color: white;
+    height: 30px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon{
+    width: 20px;
+    height: 20px;
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+.casinha{
+    stop-color: #000;
+    width: 20px;
+    height: 20px;
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+.mobileicon1{
+    
+    width: 20px;
+    height: 20px;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+.mobileicon2{
+    width: 20px;
+    height: 20px;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+
+.barrainicial{
+    height: 30px;
+    width: 96%;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    margin-left: 10px;
+    
+}
+
+
+
+@media (min-width:614px) {
+    .barrafinal, .mobileicon1, .mobileicon2, .barrainicial{
+        display:none;
+    }
+     }
+
+@media (max-width: 935px){
+    .pesquisar{
+        width: 100%;
+    }
+    .right-col, .search-box{
+        display:none;
+    }
+
+    .nav-wrapper,
+    .wrapper{
+        width: 70%;
+    }
+
+    .wrapper{
+        display:block;
+    }
+
+    }
+
+    @media (max-width:614px){
+        .barra-lateral{
+        position:absolute;
+        left:50%;
+        transform: translateX(-50%);
+        margin-top: 30px;
+        }
+        .barra_instagram{
+            width: 100%;
+        }
+
+        .barra-pesquisa, .icones-direita{
+            display: none;
+        }
+        
+        .wrapper{
+            width: 100%;
+        }
+        .divisoria_icone{
+            display:none;
+        }
+
+        .icones:first-child{
+            display:none;
+
+        }
+
+
+        .barra-lateral{
+            display:none;
+        }
+
+        .principal{
+            margin-top:0;
+        }
+
+        .pesquisar{
+            display: flex;
+        }
+
+        .conteiner-stories{
+            background-color: #FAFAFA;
+            height: 130px;
+        }
+        
+        .stories{
+            margin-top: 15px;
+        }
+
+        .feed1{
+            margin-top: 0px;
+        }
+
+       body{
+        overflow-x:hidden;
+         }
+
+    }
